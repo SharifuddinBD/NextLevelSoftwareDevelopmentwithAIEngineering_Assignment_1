@@ -6,6 +6,42 @@ In object-oriented programming, we often want to protect the data inside a class
 
 ## Body
 
+**1. `public`.** This is the default. Anyone can read or change a public member from anywhere.
+
+```ts
+class Account {
+  public owner: string;
+  private balance = 0;
+  protected type = "saving";
+  readonly id: number;
+
+  constructor(owner: string, id: number) {
+    this.owner = owner;
+    this.id = id;
+  }
+}
+```
+
+**2. `private`.** A private member can only be used inside its own class. Outside code gets a compile error.
+
+```ts
+const acc = new Account("Sharif", 1);
+acc.balance = 500; // Error: 'balance' is private
+```
+
+**3. `protected`.** This is like private, but child classes can also use it.
+
+```ts
+class Premium extends Account {
+  show() { return this.type; } // Allowed
+}
+```
+
+**4. `readonly`.** A readonly property can be set once, in the constructor, and cannot change later.
+
+```ts
+acc.id = 2; // Error: 'id' is read-only
+```
 
 ## Conclusion
 
