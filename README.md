@@ -23,6 +23,14 @@ This project has my solutions for Assignment 1. It covers basic types, generics,
 7. `Employee`, `Manager` – classes and access modifiers
 8. `validateAgeAsync` – async function and Promise
 
+## Blog Posts
+ 
+1. [Type vs Interface in TypeScript](https://github.com/SharifuddinBD/NextLevelSoftwareDevelopmentwithAIEngineering_Assignment_1/blob/main/type-vs-interface.md)
+   Explains the main differences between `type` and `interface`, such as declaration merging, flexibility, and extending. It also shows when to use each one.
+2. [Access Modifiers in TypeScript](https://github.com/SharifuddinBD/NextLevelSoftwareDevelopmentwithAIEngineering_Assignment_1/blob/main/access-modifiers.md)
+   Explains `public`, `private`, `protected`, and `readonly` with simple class examples. It shows how each one controls access to data.
+
+
 ## How to Run
 
 ```bash
